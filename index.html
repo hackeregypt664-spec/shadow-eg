@@ -2,29 +2,62 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shadow Egypt - مواقع المدرسين</title>
   <style>
-    *{margin:0; padding:0; box-sizing:border-box}
-    body{background:#0a0a0a; color:white; font-family:tahoma; text-align:center}
-    .hero{background:linear-gradient(135deg,#00ff88,#00ccff); color:black; padding:60px 20px}
-    h1{font-size:40px; margin-bottom:10px}
-    .btn{background:black; color:#00ff88; padding:15px 40px; font-size:20px; border:none; border-radius:10px; margin-top:20px; cursor:pointer; font-weight:bold}
-    .features{padding:50px 20px}
-    .card{background:#1a1a1a; margin:20px; padding:20px; border-radius:10px; display:inline-block; width:250px}
+    *{margin:0; padding:0; box-sizing:border-box; font-family:tahoma}
+    body{background:#0a0a0a; color:white}
+    .hero{background:linear-gradient(135deg,#00ff88,#00ccff); color:black; padding:80px 20px; text-align:center}
+    h1{font-size:45px; margin-bottom:10px}
+    .hero p{font-size:18px; margin-bottom:20px}
+    .btn{background:black; color:#00ff88; padding:18px 50px; font-size:22px; border:none; border-radius:15px; cursor:pointer; font-weight:bold}
+    .section{padding:50px 20px; text-align:center}
+    .section h2{font-size:30px; margin-bottom:30px; color:#00ff88}
+    .grid{display:flex; flex-wrap:wrap; justify-content:center; gap:20px}
+    .card{background:#1a1a1a; padding:30px; border-radius:15px; width:300px; border:2px solid #00ff88}
+    .card h3{color:#00ccff; margin-bottom:10px}
+    .portfolio{background:#111}
+    .teacher{background:#1a1a1a; padding:20px; border-radius:10px; width:280px; text-align:right}
+    .footer{padding:30px; background:#000; text-align:center; color:#666}
   </style>
 </head>
 <body>
   <div class="hero">
-    <h1>Shadow Egypt 🔥</h1>
+    <h1>🔥 Shadow Egypt</h1>
     <p>بنعمل مواقع احترافية للمدرسين في 24 ساعة</p>
     <button class="btn" onclick="window.open('https://wa.me/201020798496')">اطلب موقعك دلوقتي</button>
   </div>
   
-  <div class="features">
+  <div class="section">
     <h2>هتاخد ايه في الموقع؟</h2>
-    <div class="card">📱 زرار واتساب مباشر</div>
-    <div class="card">📅 جدول المواعيد</div>
-    <div class="card">⭐ اراء الطلبة</div>
+    <div class="grid">
+      <div class="card"><h3>📱 زرار واتساب مباشر</h3><p>الطالب يدوس يكلمك فورا</p></div>
+      <div class="card"><h3>📅 جدول المواعيد</h3><p>اعرض مواعيدك واماكن الدروس</p></div>
+      <div class="card"><h3>⭐ اراء الطلبة</h3><p>كسب ثقة اولياء الامور</p></div>
+      <div class="card"><h3>📹 فيديوهات يوتيوب</h3><p>حط شرحك جوه الموقع</p></div>
+      <div class="card"><h3>💰 اسعار الكورسات</h3><p>وضح كل حاجة بشفافية</p></div>
+      <div class="card"><h3>📍 اللوكيشن</h3><p>الطالب يوصلك بسهولة</p></div>
+    </div>
+  </div>
+
+  <div class="section portfolio">
+    <h2>نماذج من شغلنا</h2>
+    <div class="grid">
+      <div class="teacher">
+        <h3>مستر محمد علي</h3>
+        <p>فيزياء 3 ثانوي</p>
+        <button class="btn" style="padding:10px 20px; font-size:16px; margin-top:10px" onclick="alert('قريباً')">شوف الموقع</button>
+      </div>
+      <div class="teacher">
+        <h3>مس فاطمة</h3>
+        <p>انجليزي ثانوي</p>
+        <button class="btn" style="padding:10px 20px; font-size:16px; margin-top:10px" onclick="alert('قريباً')">شوف الموقع</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Shadow Egypt © 2026 - كل الحقوق محفوظة</p>
   </div>
 </body>
 </html>
